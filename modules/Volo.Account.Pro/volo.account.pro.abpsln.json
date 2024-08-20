@@ -1,0 +1,7 @@
+{
+  "modules": {
+    "volo.account.pro": {
+      "path": "volo.account.pro.abpmdl.json"
+    }
+  }
+}

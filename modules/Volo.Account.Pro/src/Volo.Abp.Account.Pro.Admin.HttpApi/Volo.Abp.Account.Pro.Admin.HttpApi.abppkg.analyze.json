@@ -1,0 +1,24 @@
+{
+  "name": "Volo.Abp.Account.Pro.Admin.HttpApi",
+  "hash": "4b245274f0af40e9712e68c674cbcd8e",
+  "contents": [
+    {
+      "namespace": "Volo.Abp.Account",
+      "dependsOnModules": [
+        {
+          "declaringAssemblyName": "Volo.Abp.Account.Pro.Admin.Application.Contracts",
+          "namespace": "Volo.Abp.Account",
+          "name": "AbpAccountAdminApplicationContractsModule"
+        },
+        {
+          "declaringAssemblyName": "Volo.Abp.AspNetCore.Mvc",
+          "namespace": "Volo.Abp.AspNetCore.Mvc",
+          "name": "AbpAspNetCoreMvcModule"
+        }
+      ],
+      "contentType": "abpModule",
+      "name": "AbpAccountAdminHttpApiModule",
+      "summary": null
+    }
+  ]
+}

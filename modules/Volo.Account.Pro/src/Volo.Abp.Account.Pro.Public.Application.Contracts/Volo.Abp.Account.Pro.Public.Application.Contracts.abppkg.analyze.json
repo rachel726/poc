@@ -1,0 +1,24 @@
+{
+  "name": "Volo.Abp.Account.Pro.Public.Application.Contracts",
+  "hash": "a51d49b0b265572ae93db9a80ec67105",
+  "contents": [
+    {
+      "namespace": "Volo.Abp.Account",
+      "dependsOnModules": [
+        {
+          "declaringAssemblyName": "Volo.Abp.Account.Pro.Shared.Application.Contracts",
+          "namespace": "Volo.Abp.Account",
+          "name": "AbpAccountSharedApplicationContractsModule"
+        },
+        {
+          "declaringAssemblyName": "Volo.Abp.Emailing",
+          "namespace": "Volo.Abp.Emailing",
+          "name": "AbpEmailingModule"
+        }
+      ],
+      "contentType": "abpModule",
+      "name": "AbpAccountPublicApplicationContractsModule",
+      "summary": null
+    }
+  ]
+}

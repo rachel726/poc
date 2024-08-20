@@ -1,0 +1,15 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <Import Project="..\..\common.props" />
+
+  <PropertyGroup>
+    <TargetFramework>netstandard2.0</TargetFramework>
+    <RootNamespace>volo.account.pro</RootNamespace>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Volo.Abp.Ddd.Domain" Version="7.0.0" />
+    <ProjectReference Include="..\volo.account.pro.Domain.Shared\volo.account.pro.Domain.Shared.csproj" />
+  </ItemGroup>
+
+</Project>

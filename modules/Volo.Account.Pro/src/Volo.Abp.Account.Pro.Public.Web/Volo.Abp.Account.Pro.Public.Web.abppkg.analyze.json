@@ -1,0 +1,64 @@
+{
+  "name": "Volo.Abp.Account.Pro.Public.Web",
+  "hash": "de57464e8a0b19e975e6428fa26068b1",
+  "contents": [
+    {
+      "namespace": "Volo.Abp.Account.Public.Web",
+      "dependsOnModules": [
+        {
+          "declaringAssemblyName": "Volo.Abp.Account.Pro.Public.Application.Contracts",
+          "namespace": "Volo.Abp.Account",
+          "name": "AbpAccountPublicApplicationContractsModule"
+        },
+        {
+          "declaringAssemblyName": "Volo.Abp.Identity.AspNetCore",
+          "namespace": "Volo.Abp.Identity.AspNetCore",
+          "name": "AbpIdentityAspNetCoreModule"
+        },
+        {
+          "declaringAssemblyName": "Volo.Abp.Identity.Pro.Domain",
+          "namespace": "Volo.Abp.Identity",
+          "name": "AbpIdentityProDomainModule"
+        },
+        {
+          "declaringAssemblyName": "Volo.Abp.AspNetCore.Mvc.UI.Theme.Commercial",
+          "namespace": "Volo.Abp.AspNetCore.Mvc.UI.Theme.Commercial",
+          "name": "AbpAspNetCoreMvcUiThemeCommercialModule"
+        },
+        {
+          "declaringAssemblyName": "Volo.Abp.Emailing",
+          "namespace": "Volo.Abp.Emailing",
+          "name": "AbpEmailingModule"
+        },
+        {
+          "declaringAssemblyName": "Volo.Abp.Sms",
+          "namespace": "Volo.Abp.Sms",
+          "name": "AbpSmsModule"
+        },
+        {
+          "declaringAssemblyName": "Volo.Abp.Security",
+          "namespace": "Volo.Abp.Security",
+          "name": "AbpSecurityModule"
+        },
+        {
+          "declaringAssemblyName": "Volo.Abp.AutoMapper",
+          "namespace": "Volo.Abp.AutoMapper",
+          "name": "AbpAutoMapperModule"
+        },
+        {
+          "declaringAssemblyName": "Volo.Abp.AspNetCore.MultiTenancy",
+          "namespace": "Volo.Abp.AspNetCore.MultiTenancy",
+          "name": "AbpAspNetCoreMultiTenancyModule"
+        },
+        {
+          "declaringAssemblyName": "Volo.Abp.ExceptionHandling",
+          "namespace": "Volo.Abp.ExceptionHandling",
+          "name": "AbpExceptionHandlingModule"
+        }
+      ],
+      "contentType": "abpModule",
+      "name": "AbpAccountPublicWebModule",
+      "summary": null
+    }
+  ]
+}

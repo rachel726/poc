@@ -1,0 +1,20 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+    <Import Project="..\..\common.props" />
+
+    <PropertyGroup>
+        <TargetFramework>net7.0</TargetFramework>
+        <GenerateEmbeddedFilesManifest>true</GenerateEmbeddedFilesManifest>
+        <RootNamespace>volo.account.pro</RootNamespace>
+    </PropertyGroup>
+
+    <ItemGroup>
+        <PackageReference Include="Volo.Abp.VirtualFileSystem" Version="7.0.0" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <None Remove="..\..\volo.account.pro.abpmdl.json" />
+      <EmbeddedResource Include="..\..\volo.account.pro.abpmdl.json" />
+    </ItemGroup>
+
+</Project>

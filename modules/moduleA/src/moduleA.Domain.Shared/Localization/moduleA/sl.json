@@ -1,0 +1,7 @@
+{
+  "culture": "sl",
+  "texts": {
+    "SamplePageMessage": "Vzorčna stran za modul moduleA",
+    "Menu:moduleA": "Ime mojega projekta"
+  }
+}

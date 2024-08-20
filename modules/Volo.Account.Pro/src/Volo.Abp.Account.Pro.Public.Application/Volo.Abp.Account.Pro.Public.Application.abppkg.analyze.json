@@ -1,0 +1,646 @@
+{
+  "name": "Volo.Abp.Account.Pro.Public.Application",
+  "hash": "3413cbb2b8c0fc03112d50155eea0b57",
+  "contents": [
+    {
+      "namespace": "Volo.Abp.Account",
+      "dependsOnModules": [
+        {
+          "declaringAssemblyName": "Volo.Abp.Account.Pro.Shared.Application",
+          "namespace": "Volo.Abp.Account",
+          "name": "AbpAccountSharedApplicationModule"
+        },
+        {
+          "declaringAssemblyName": "Volo.Abp.Sms",
+          "namespace": "Volo.Abp.Sms",
+          "name": "AbpSmsModule"
+        },
+        {
+          "declaringAssemblyName": "Volo.Abp.AutoMapper",
+          "namespace": "Volo.Abp.AutoMapper",
+          "name": "AbpAutoMapperModule"
+        },
+        {
+          "declaringAssemblyName": "Volo.Abp.BlobStoring",
+          "namespace": "Volo.Abp.BlobStoring",
+          "name": "AbpBlobStoringModule"
+        },
+        {
+          "declaringAssemblyName": "Volo.Abp.Account.Pro.Public.Application.Contracts",
+          "namespace": "Volo.Abp.Account",
+          "name": "AbpAccountPublicApplicationContractsModule"
+        }
+      ],
+      "contentType": "abpModule",
+      "name": "AbpAccountPublicApplicationModule",
+      "summary": null
+    },
+    {
+      "namespace": "Volo.Abp.Account",
+      "baseClass": {
+        "name": "ApplicationService",
+        "namespace": "Volo.Abp.Application.Services",
+        "declaringAssemblyName": "Volo.Abp.Ddd.Application"
+      },
+      "implementingInterfaces": [
+        {
+          "name": "IApplicationService",
+          "namespace": "Volo.Abp.Application.Services",
+          "declaringAssemblyName": "Volo.Abp.Ddd.Application.Contracts"
+        },
+        {
+          "name": "IRemoteService",
+          "namespace": "Volo.Abp",
+          "declaringAssemblyName": "Volo.Abp.Core"
+        },
+        {
+          "name": "IAvoidDuplicateCrossCuttingConcerns",
+          "namespace": "Volo.Abp.Aspects",
+          "declaringAssemblyName": "Volo.Abp.Core"
+        },
+        {
+          "name": "IValidationEnabled",
+          "namespace": "Volo.Abp.Validation",
+          "declaringAssemblyName": "Volo.Abp.Validation"
+        },
+        {
+          "name": "IUnitOfWorkEnabled",
+          "namespace": "Volo.Abp.Uow",
+          "declaringAssemblyName": "Volo.Abp.Uow"
+        },
+        {
+          "name": "IAuditingEnabled",
+          "namespace": "Volo.Abp.Auditing",
+          "declaringAssemblyName": "Volo.Abp.Auditing.Contracts"
+        },
+        {
+          "name": "IGlobalFeatureCheckingEnabled",
+          "namespace": "Volo.Abp.GlobalFeatures",
+          "declaringAssemblyName": "Volo.Abp.GlobalFeatures"
+        },
+        {
+          "name": "ITransientDependency",
+          "namespace": "Volo.Abp.DependencyInjection",
+          "declaringAssemblyName": "Volo.Abp.Core"
+        },
+        {
+          "name": "IAccountAppService",
+          "namespace": "Volo.Abp.Account",
+          "declaringAssemblyName": "Volo.Abp.Account.Pro.Public.Application.Contracts"
+        }
+      ],
+      "methods": [
+        {
+          "returnType": "IdentityUserDto",
+          "isAsync": true,
+          "name": "RegisterAsync",
+          "summary": null,
+          "parameters": [
+            {
+              "type": "RegisterDto",
+              "name": "input",
+              "isOptional": false
+            }
+          ]
+        },
+        {
+          "returnType": "Void",
+          "isAsync": true,
+          "name": "SendPasswordResetCodeAsync",
+          "summary": null,
+          "parameters": [
+            {
+              "type": "SendPasswordResetCodeDto",
+              "name": "input",
+              "isOptional": false
+            }
+          ]
+        },
+        {
+          "returnType": "Boolean",
+          "isAsync": true,
+          "name": "VerifyPasswordResetTokenAsync",
+          "summary": null,
+          "parameters": [
+            {
+              "type": "VerifyPasswordResetTokenInput",
+              "name": "input",
+              "isOptional": false
+            }
+          ]
+        },
+        {
+          "returnType": "Void",
+          "isAsync": true,
+          "name": "ResetPasswordAsync",
+          "summary": null,
+          "parameters": [
+            {
+              "type": "ResetPasswordDto",
+              "name": "input",
+              "isOptional": false
+            }
+          ]
+        },
+        {
+          "returnType": "IdentityUserConfirmationStateDto",
+          "isAsync": true,
+          "name": "GetConfirmationStateAsync",
+          "summary": null,
+          "parameters": [
+            {
+              "type": "Guid",
+              "name": "id",
+              "isOptional": false
+            }
+          ]
+        },
+        {
+          "returnType": "Void",
+          "isAsync": true,
+          "name": "SendPhoneNumberConfirmationTokenAsync",
+          "summary": null,
+          "parameters": [
+            {
+              "type": "SendPhoneNumberConfirmationTokenDto",
+              "name": "input",
+              "isOptional": false
+            }
+          ]
+        },
+        {
+          "returnType": "Void",
+          "isAsync": true,
+          "name": "SendEmailConfirmationTokenAsync",
+          "summary": null,
+          "parameters": [
+            {
+              "type": "SendEmailConfirmationTokenDto",
+              "name": "input",
+              "isOptional": false
+            }
+          ]
+        },
+        {
+          "returnType": "Boolean",
+          "isAsync": true,
+          "name": "VerifyEmailConfirmationTokenAsync",
+          "summary": null,
+          "parameters": [
+            {
+              "type": "VerifyEmailConfirmationTokenInput",
+              "name": "input",
+              "isOptional": false
+            }
+          ]
+        },
+        {
+          "returnType": "Void",
+          "isAsync": true,
+          "name": "ConfirmPhoneNumberAsync",
+          "summary": null,
+          "parameters": [
+            {
+              "type": "ConfirmPhoneNumberInput",
+              "name": "input",
+              "isOptional": false
+            }
+          ]
+        },
+        {
+          "returnType": "Void",
+          "isAsync": true,
+          "name": "ConfirmEmailAsync",
+          "summary": null,
+          "parameters": [
+            {
+              "type": "ConfirmEmailInput",
+              "name": "input",
+              "isOptional": false
+            }
+          ]
+        },
+        {
+          "returnType": "Void",
+          "isAsync": true,
+          "name": "SetProfilePictureAsync",
+          "summary": null,
+          "parameters": [
+            {
+              "type": "ProfilePictureInput",
+              "name": "input",
+              "isOptional": false
+            }
+          ]
+        },
+        {
+          "returnType": "ProfilePictureSourceDto",
+          "isAsync": true,
+          "name": "GetProfilePictureAsync",
+          "summary": null,
+          "parameters": [
+            {
+              "type": "Guid",
+              "name": "id",
+              "isOptional": false
+            }
+          ]
+        },
+        {
+          "returnType": "IRemoteStreamContent",
+          "isAsync": true,
+          "name": "GetProfilePictureFileAsync",
+          "summary": null,
+          "parameters": [
+            {
+              "type": "Guid",
+              "name": "id",
+              "isOptional": false
+            }
+          ]
+        },
+        {
+          "returnType": "List<String>",
+          "isAsync": true,
+          "name": "GetTwoFactorProvidersAsync",
+          "summary": null,
+          "parameters": [
+            {
+              "type": "GetTwoFactorProvidersInput",
+              "name": "input",
+              "isOptional": false
+            }
+          ]
+        },
+        {
+          "returnType": "Void",
+          "isAsync": true,
+          "name": "SendTwoFactorCodeAsync",
+          "summary": null,
+          "parameters": [
+            {
+              "type": "SendTwoFactorCodeInput",
+              "name": "input",
+              "isOptional": false
+            }
+          ]
+        },
+        {
+          "returnType": "PagedResultDto<IdentitySecurityLogDto>",
+          "isAsync": true,
+          "name": "GetSecurityLogListAsync",
+          "summary": null,
+          "parameters": [
+            {
+              "type": "GetIdentitySecurityLogListInput",
+              "name": "input",
+              "isOptional": false
+            }
+          ]
+        }
+      ],
+      "contentType": "applicationService",
+      "name": "AccountAppService",
+      "summary": null
+    },
+    {
+      "namespace": "Volo.Abp.Account",
+      "baseClass": {
+        "name": "ApplicationService",
+        "namespace": "Volo.Abp.Application.Services",
+        "declaringAssemblyName": "Volo.Abp.Ddd.Application"
+      },
+      "implementingInterfaces": [
+        {
+          "name": "IApplicationService",
+          "namespace": "Volo.Abp.Application.Services",
+          "declaringAssemblyName": "Volo.Abp.Ddd.Application.Contracts"
+        },
+        {
+          "name": "IRemoteService",
+          "namespace": "Volo.Abp",
+          "declaringAssemblyName": "Volo.Abp.Core"
+        },
+        {
+          "name": "IAvoidDuplicateCrossCuttingConcerns",
+          "namespace": "Volo.Abp.Aspects",
+          "declaringAssemblyName": "Volo.Abp.Core"
+        },
+        {
+          "name": "IValidationEnabled",
+          "namespace": "Volo.Abp.Validation",
+          "declaringAssemblyName": "Volo.Abp.Validation"
+        },
+        {
+          "name": "IUnitOfWorkEnabled",
+          "namespace": "Volo.Abp.Uow",
+          "declaringAssemblyName": "Volo.Abp.Uow"
+        },
+        {
+          "name": "IAuditingEnabled",
+          "namespace": "Volo.Abp.Auditing",
+          "declaringAssemblyName": "Volo.Abp.Auditing.Contracts"
+        },
+        {
+          "name": "IGlobalFeatureCheckingEnabled",
+          "namespace": "Volo.Abp.GlobalFeatures",
+          "declaringAssemblyName": "Volo.Abp.GlobalFeatures"
+        },
+        {
+          "name": "ITransientDependency",
+          "namespace": "Volo.Abp.DependencyInjection",
+          "declaringAssemblyName": "Volo.Abp.Core"
+        },
+        {
+          "name": "IIdentityLinkUserAppService",
+          "namespace": "Volo.Abp.Account",
+          "declaringAssemblyName": "Volo.Abp.Account.Pro.Public.Application.Contracts"
+        }
+      ],
+      "methods": [
+        {
+          "returnType": "ListResultDto<LinkUserDto>",
+          "isAsync": true,
+          "name": "GetAllListAsync",
+          "summary": null,
+          "parameters": []
+        },
+        {
+          "returnType": "Void",
+          "isAsync": true,
+          "name": "LinkAsync",
+          "summary": null,
+          "parameters": [
+            {
+              "type": "LinkUserInput",
+              "name": "input",
+              "isOptional": false
+            }
+          ]
+        },
+        {
+          "returnType": "Void",
+          "isAsync": true,
+          "name": "UnlinkAsync",
+          "summary": null,
+          "parameters": [
+            {
+              "type": "UnLinkUserInput",
+              "name": "input",
+              "isOptional": false
+            }
+          ]
+        },
+        {
+          "returnType": "Boolean",
+          "isAsync": true,
+          "name": "IsLinkedAsync",
+          "summary": null,
+          "parameters": [
+            {
+              "type": "IsLinkedInput",
+              "name": "input",
+              "isOptional": false
+            }
+          ]
+        },
+        {
+          "returnType": "String",
+          "isAsync": true,
+          "name": "GenerateLinkTokenAsync",
+          "summary": null,
+          "parameters": []
+        },
+        {
+          "returnType": "Boolean",
+          "isAsync": true,
+          "name": "VerifyLinkTokenAsync",
+          "summary": null,
+          "parameters": [
+            {
+              "type": "VerifyLinkTokenInput",
+              "name": "input",
+              "isOptional": false
+            }
+          ]
+        },
+        {
+          "returnType": "String",
+          "isAsync": true,
+          "name": "GenerateLinkLoginTokenAsync",
+          "summary": null,
+          "parameters": []
+        },
+        {
+          "returnType": "Boolean",
+          "isAsync": true,
+          "name": "VerifyLinkLoginTokenAsync",
+          "summary": null,
+          "parameters": [
+            {
+              "type": "VerifyLinkLoginTokenInput",
+              "name": "input",
+              "isOptional": false
+            }
+          ]
+        }
+      ],
+      "contentType": "applicationService",
+      "name": "IdentityLinkUserAppService",
+      "summary": null
+    },
+    {
+      "namespace": "Volo.Abp.Account",
+      "baseClass": {
+        "name": "ApplicationService",
+        "namespace": "Volo.Abp.Application.Services",
+        "declaringAssemblyName": "Volo.Abp.Ddd.Application"
+      },
+      "implementingInterfaces": [
+        {
+          "name": "IApplicationService",
+          "namespace": "Volo.Abp.Application.Services",
+          "declaringAssemblyName": "Volo.Abp.Ddd.Application.Contracts"
+        },
+        {
+          "name": "IRemoteService",
+          "namespace": "Volo.Abp",
+          "declaringAssemblyName": "Volo.Abp.Core"
+        },
+        {
+          "name": "IAvoidDuplicateCrossCuttingConcerns",
+          "namespace": "Volo.Abp.Aspects",
+          "declaringAssemblyName": "Volo.Abp.Core"
+        },
+        {
+          "name": "IValidationEnabled",
+          "namespace": "Volo.Abp.Validation",
+          "declaringAssemblyName": "Volo.Abp.Validation"
+        },
+        {
+          "name": "IUnitOfWorkEnabled",
+          "namespace": "Volo.Abp.Uow",
+          "declaringAssemblyName": "Volo.Abp.Uow"
+        },
+        {
+          "name": "IAuditingEnabled",
+          "namespace": "Volo.Abp.Auditing",
+          "declaringAssemblyName": "Volo.Abp.Auditing.Contracts"
+        },
+        {
+          "name": "IGlobalFeatureCheckingEnabled",
+          "namespace": "Volo.Abp.GlobalFeatures",
+          "declaringAssemblyName": "Volo.Abp.GlobalFeatures"
+        },
+        {
+          "name": "ITransientDependency",
+          "namespace": "Volo.Abp.DependencyInjection",
+          "declaringAssemblyName": "Volo.Abp.Core"
+        },
+        {
+          "name": "IProfileAppService",
+          "namespace": "Volo.Abp.Account",
+          "declaringAssemblyName": "Volo.Abp.Account.Pro.Public.Application.Contracts"
+        }
+      ],
+      "methods": [
+        {
+          "returnType": "ProfileDto",
+          "isAsync": true,
+          "name": "GetAsync",
+          "summary": null,
+          "parameters": []
+        },
+        {
+          "returnType": "ProfileDto",
+          "isAsync": true,
+          "name": "UpdateAsync",
+          "summary": null,
+          "parameters": [
+            {
+              "type": "UpdateProfileDto",
+              "name": "input",
+              "isOptional": false
+            }
+          ]
+        },
+        {
+          "returnType": "Void",
+          "isAsync": true,
+          "name": "ChangePasswordAsync",
+          "summary": null,
+          "parameters": [
+            {
+              "type": "ChangePasswordInput",
+              "name": "input",
+              "isOptional": false
+            }
+          ]
+        },
+        {
+          "returnType": "Boolean",
+          "isAsync": true,
+          "name": "GetTwoFactorEnabledAsync",
+          "summary": null,
+          "parameters": []
+        },
+        {
+          "returnType": "Void",
+          "isAsync": true,
+          "name": "SetTwoFactorEnabledAsync",
+          "summary": null,
+          "parameters": [
+            {
+              "type": "Boolean",
+              "name": "enabled",
+              "isOptional": false
+            }
+          ]
+        }
+      ],
+      "contentType": "applicationService",
+      "name": "ProfileAppService",
+      "summary": null
+    },
+    {
+      "namespace": "Volo.Abp.Account.ExternalProviders",
+      "baseClass": {
+        "name": "ApplicationService",
+        "namespace": "Volo.Abp.Application.Services",
+        "declaringAssemblyName": "Volo.Abp.Ddd.Application"
+      },
+      "implementingInterfaces": [
+        {
+          "name": "IApplicationService",
+          "namespace": "Volo.Abp.Application.Services",
+          "declaringAssemblyName": "Volo.Abp.Ddd.Application.Contracts"
+        },
+        {
+          "name": "IRemoteService",
+          "namespace": "Volo.Abp",
+          "declaringAssemblyName": "Volo.Abp.Core"
+        },
+        {
+          "name": "IAvoidDuplicateCrossCuttingConcerns",
+          "namespace": "Volo.Abp.Aspects",
+          "declaringAssemblyName": "Volo.Abp.Core"
+        },
+        {
+          "name": "IValidationEnabled",
+          "namespace": "Volo.Abp.Validation",
+          "declaringAssemblyName": "Volo.Abp.Validation"
+        },
+        {
+          "name": "IUnitOfWorkEnabled",
+          "namespace": "Volo.Abp.Uow",
+          "declaringAssemblyName": "Volo.Abp.Uow"
+        },
+        {
+          "name": "IAuditingEnabled",
+          "namespace": "Volo.Abp.Auditing",
+          "declaringAssemblyName": "Volo.Abp.Auditing.Contracts"
+        },
+        {
+          "name": "IGlobalFeatureCheckingEnabled",
+          "namespace": "Volo.Abp.GlobalFeatures",
+          "declaringAssemblyName": "Volo.Abp.GlobalFeatures"
+        },
+        {
+          "name": "ITransientDependency",
+          "namespace": "Volo.Abp.DependencyInjection",
+          "declaringAssemblyName": "Volo.Abp.Core"
+        },
+        {
+          "name": "IAccountExternalProviderAppService",
+          "namespace": "Volo.Abp.Account.ExternalProviders",
+          "declaringAssemblyName": "Volo.Abp.Account.Pro.Public.Application.Contracts"
+        }
+      ],
+      "methods": [
+        {
+          "returnType": "ExternalProviderDto",
+          "isAsync": true,
+          "name": "GetAllAsync",
+          "summary": null,
+          "parameters": []
+        },
+        {
+          "returnType": "ExternalProviderItemWithSecretDto",
+          "isAsync": true,
+          "name": "GetByNameAsync",
+          "summary": null,
+          "parameters": [
+            {
+              "type": "GetByNameInput",
+              "name": "input",
+              "isOptional": false
+            }
+          ]
+        }
+      ],
+      "contentType": "applicationService",
+      "name": "AccountExternalProviderAppService",
+      "summary": null
+    }
+  ]
+}

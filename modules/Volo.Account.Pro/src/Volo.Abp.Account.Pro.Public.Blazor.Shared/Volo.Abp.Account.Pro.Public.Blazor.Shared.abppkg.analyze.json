@@ -1,0 +1,19 @@
+{
+  "name": "Volo.Abp.Account.Pro.Public.Blazor.Shared",
+  "hash": "89ec7e198c7d5ad3144b6d5908c63627",
+  "contents": [
+    {
+      "namespace": "Volo.Abp.Account.Pro.Public.Blazor.Shared",
+      "dependsOnModules": [
+        {
+          "declaringAssemblyName": "Volo.Abp.AspNetCore.Components.Web.Theming",
+          "namespace": "Volo.Abp.AspNetCore.Components.Web.Theming",
+          "name": "AbpAspNetCoreComponentsWebThemingModule"
+        }
+      ],
+      "contentType": "abpModule",
+      "name": "AbpAccountPublicBlazorSharedModule",
+      "summary": null
+    }
+  ]
+}

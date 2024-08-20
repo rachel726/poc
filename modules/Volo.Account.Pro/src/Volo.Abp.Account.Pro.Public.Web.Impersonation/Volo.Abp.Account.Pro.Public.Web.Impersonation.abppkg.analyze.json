@@ -1,0 +1,29 @@
+{
+  "name": "Volo.Abp.Account.Pro.Public.Web.Impersonation",
+  "hash": "cdc3f88426d7ce59714fb683233aafdc",
+  "contents": [
+    {
+      "namespace": "Volo.Abp.Account.Public.Web.Impersonation",
+      "dependsOnModules": [
+        {
+          "declaringAssemblyName": "Volo.Abp.AspNetCore.Mvc",
+          "namespace": "Volo.Abp.AspNetCore.Mvc",
+          "name": "AbpAspNetCoreMvcModule"
+        },
+        {
+          "declaringAssemblyName": "Volo.Abp.AspNetCore.Authentication.JwtBearer",
+          "namespace": "Volo.Abp.AspNetCore.Authentication.JwtBearer",
+          "name": "AbpAspNetCoreAuthenticationJwtBearerModule"
+        },
+        {
+          "declaringAssemblyName": "Volo.Abp.AspNetCore.Authentication.OpenIdConnect",
+          "namespace": "Volo.Abp.AspNetCore.Authentication.OpenIdConnect",
+          "name": "AbpAspNetCoreAuthenticationOpenIdConnectModule"
+        }
+      ],
+      "contentType": "abpModule",
+      "name": "AbpAccountPublicWebImpersonationModule",
+      "summary": null
+    }
+  ]
+}

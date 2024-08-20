@@ -1,0 +1,111 @@
+{
+  "folders": {
+    "items": {
+      "src": {},
+      "test": {},
+      "host": {}
+    }
+  },
+  "packages": {
+    "volo.account.pro.Domain.Shared": {
+      "path": "src/volo.account.pro.Domain.Shared/volo.account.pro.Domain.Shared.abppkg.json",
+      "folder": "src"
+    },
+    "volo.account.pro.Domain": {
+      "path": "src/volo.account.pro.Domain/volo.account.pro.Domain.abppkg.json",
+      "folder": "src"
+    },
+    "volo.account.pro.Application.Contracts": {
+      "path": "src/volo.account.pro.Application.Contracts/volo.account.pro.Application.Contracts.abppkg.json",
+      "folder": "src"
+    },
+    "volo.account.pro.Application": {
+      "path": "src/volo.account.pro.Application/volo.account.pro.Application.abppkg.json",
+      "folder": "src"
+    },
+    "volo.account.pro.EntityFrameworkCore": {
+      "path": "src/volo.account.pro.EntityFrameworkCore/volo.account.pro.EntityFrameworkCore.abppkg.json",
+      "folder": "src"
+    },
+    "volo.account.pro.MongoDB": {
+      "path": "src/volo.account.pro.MongoDB/volo.account.pro.MongoDB.abppkg.json",
+      "folder": "src"
+    },
+    "volo.account.pro.HttpApi": {
+      "path": "src/volo.account.pro.HttpApi/volo.account.pro.HttpApi.abppkg.json",
+      "folder": "src"
+    },
+    "volo.account.pro.HttpApi.Client": {
+      "path": "src/volo.account.pro.HttpApi.Client/volo.account.pro.HttpApi.Client.abppkg.json",
+      "folder": "src"
+    },
+    "volo.account.pro.TestBase": {
+      "path": "test/volo.account.pro.TestBase/volo.account.pro.TestBase.abppkg.json",
+      "folder": "test"
+    },
+    "volo.account.pro.EntityFrameworkCore.Tests": {
+      "path": "test/volo.account.pro.EntityFrameworkCore.Tests/volo.account.pro.EntityFrameworkCore.Tests.abppkg.json",
+      "folder": "test"
+    },
+    "volo.account.pro.MongoDB.Tests": {
+      "path": "test/volo.account.pro.MongoDB.Tests/volo.account.pro.MongoDB.Tests.abppkg.json",
+      "folder": "test"
+    },
+    "volo.account.pro.Domain.Tests": {
+      "path": "test/volo.account.pro.Domain.Tests/volo.account.pro.Domain.Tests.abppkg.json",
+      "folder": "test"
+    },
+    "volo.account.pro.Application.Tests": {
+      "path": "test/volo.account.pro.Application.Tests/volo.account.pro.Application.Tests.abppkg.json",
+      "folder": "test"
+    },
+    "volo.account.pro.HttpApi.Host": {
+      "path": "host/volo.account.pro.HttpApi.Host/volo.account.pro.HttpApi.Host.abppkg.json",
+      "folder": "host"
+    },
+    "volo.account.pro.Web": {
+      "path": "src/volo.account.pro.Web/volo.account.pro.Web.abppkg.json",
+      "folder": "src"
+    },
+    "volo.account.pro.HttpApi.Client.ConsoleTestApp": {
+      "path": "test/volo.account.pro.HttpApi.Client.ConsoleTestApp/volo.account.pro.HttpApi.Client.ConsoleTestApp.abppkg.json",
+      "folder": "test"
+    },
+    "volo.account.pro.Web.Host": {
+      "path": "host/volo.account.pro.Web.Host/volo.account.pro.Web.Host.abppkg.json",
+      "folder": "host"
+    },
+    "volo.account.pro.AuthServer": {
+      "path": "host/volo.account.pro.AuthServer/volo.account.pro.AuthServer.abppkg.json",
+      "folder": "host"
+    },
+    "volo.account.pro.Host.Shared": {
+      "path": "host/volo.account.pro.Host.Shared/volo.account.pro.Host.Shared.abppkg.json",
+      "folder": "host"
+    },
+    "volo.account.pro.Web.Unified": {
+      "path": "host/volo.account.pro.Web.Unified/volo.account.pro.Web.Unified.abppkg.json",
+      "folder": "host"
+    },
+    "volo.account.pro.Blazor": {
+      "path": "src/volo.account.pro.Blazor/volo.account.pro.Blazor.abppkg.json",
+      "folder": "src"
+    },
+    "volo.account.pro.Blazor.Host": {
+      "path": "host/volo.account.pro.Blazor.Host/volo.account.pro.Blazor.Host.abppkg.json",
+      "folder": "host"
+    },
+    "volo.account.pro.Blazor.Server": {
+      "path": "src/volo.account.pro.Blazor.Server/volo.account.pro.Blazor.Server.abppkg.json",
+      "folder": "src"
+    },
+    "volo.account.pro.Blazor.WebAssembly": {
+      "path": "src/volo.account.pro.Blazor.WebAssembly/volo.account.pro.Blazor.WebAssembly.abppkg.json",
+      "folder": "src"
+    },
+    "volo.account.pro.Blazor.Server.Host": {
+      "path": "host/volo.account.pro.Blazor.Server.Host/volo.account.pro.Blazor.Server.Host.abppkg.json",
+      "folder": "host"
+    }
+  }
+}

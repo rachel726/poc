@@ -1,0 +1,111 @@
+{
+  "folders": {
+    "items": {
+      "src": {},
+      "test": {},
+      "host": {}
+    }
+  },
+  "packages": {
+    "NewModule.Domain.Shared": {
+      "path": "src/NewModule.Domain.Shared/NewModule.Domain.Shared.abppkg.json",
+      "folder": "src"
+    },
+    "NewModule.Domain": {
+      "path": "src/NewModule.Domain/NewModule.Domain.abppkg.json",
+      "folder": "src"
+    },
+    "NewModule.Application.Contracts": {
+      "path": "src/NewModule.Application.Contracts/NewModule.Application.Contracts.abppkg.json",
+      "folder": "src"
+    },
+    "NewModule.Application": {
+      "path": "src/NewModule.Application/NewModule.Application.abppkg.json",
+      "folder": "src"
+    },
+    "NewModule.EntityFrameworkCore": {
+      "path": "src/NewModule.EntityFrameworkCore/NewModule.EntityFrameworkCore.abppkg.json",
+      "folder": "src"
+    },
+    "NewModule.MongoDB": {
+      "path": "src/NewModule.MongoDB/NewModule.MongoDB.abppkg.json",
+      "folder": "src"
+    },
+    "NewModule.HttpApi": {
+      "path": "src/NewModule.HttpApi/NewModule.HttpApi.abppkg.json",
+      "folder": "src"
+    },
+    "NewModule.HttpApi.Client": {
+      "path": "src/NewModule.HttpApi.Client/NewModule.HttpApi.Client.abppkg.json",
+      "folder": "src"
+    },
+    "NewModule.TestBase": {
+      "path": "test/NewModule.TestBase/NewModule.TestBase.abppkg.json",
+      "folder": "test"
+    },
+    "NewModule.EntityFrameworkCore.Tests": {
+      "path": "test/NewModule.EntityFrameworkCore.Tests/NewModule.EntityFrameworkCore.Tests.abppkg.json",
+      "folder": "test"
+    },
+    "NewModule.MongoDB.Tests": {
+      "path": "test/NewModule.MongoDB.Tests/NewModule.MongoDB.Tests.abppkg.json",
+      "folder": "test"
+    },
+    "NewModule.Domain.Tests": {
+      "path": "test/NewModule.Domain.Tests/NewModule.Domain.Tests.abppkg.json",
+      "folder": "test"
+    },
+    "NewModule.Application.Tests": {
+      "path": "test/NewModule.Application.Tests/NewModule.Application.Tests.abppkg.json",
+      "folder": "test"
+    },
+    "NewModule.HttpApi.Host": {
+      "path": "host/NewModule.HttpApi.Host/NewModule.HttpApi.Host.abppkg.json",
+      "folder": "host"
+    },
+    "NewModule.Web": {
+      "path": "src/NewModule.Web/NewModule.Web.abppkg.json",
+      "folder": "src"
+    },
+    "NewModule.HttpApi.Client.ConsoleTestApp": {
+      "path": "test/NewModule.HttpApi.Client.ConsoleTestApp/NewModule.HttpApi.Client.ConsoleTestApp.abppkg.json",
+      "folder": "test"
+    },
+    "NewModule.Web.Host": {
+      "path": "host/NewModule.Web.Host/NewModule.Web.Host.abppkg.json",
+      "folder": "host"
+    },
+    "NewModule.AuthServer": {
+      "path": "host/NewModule.AuthServer/NewModule.AuthServer.abppkg.json",
+      "folder": "host"
+    },
+    "NewModule.Host.Shared": {
+      "path": "host/NewModule.Host.Shared/NewModule.Host.Shared.abppkg.json",
+      "folder": "host"
+    },
+    "NewModule.Web.Unified": {
+      "path": "host/NewModule.Web.Unified/NewModule.Web.Unified.abppkg.json",
+      "folder": "host"
+    },
+    "NewModule.Blazor": {
+      "path": "src/NewModule.Blazor/NewModule.Blazor.abppkg.json",
+      "folder": "src"
+    },
+    "NewModule.Blazor.Host": {
+      "path": "host/NewModule.Blazor.Host/NewModule.Blazor.Host.abppkg.json",
+      "folder": "host"
+    },
+    "NewModule.Blazor.Server": {
+      "path": "src/NewModule.Blazor.Server/NewModule.Blazor.Server.abppkg.json",
+      "folder": "src"
+    },
+    "NewModule.Blazor.WebAssembly": {
+      "path": "src/NewModule.Blazor.WebAssembly/NewModule.Blazor.WebAssembly.abppkg.json",
+      "folder": "src"
+    },
+    "NewModule.Blazor.Server.Host": {
+      "path": "host/NewModule.Blazor.Server.Host/NewModule.Blazor.Server.Host.abppkg.json",
+      "folder": "host"
+    }
+  }
+}

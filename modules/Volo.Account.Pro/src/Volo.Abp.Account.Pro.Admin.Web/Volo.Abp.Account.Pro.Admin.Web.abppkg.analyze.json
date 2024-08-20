@@ -1,0 +1,29 @@
+{
+  "name": "Volo.Abp.Account.Pro.Admin.Web",
+  "hash": "60644d2c813ecc47e607c6f39bbb0609",
+  "contents": [
+    {
+      "namespace": "Volo.Abp.Account.Admin.Web",
+      "dependsOnModules": [
+        {
+          "declaringAssemblyName": "Volo.Abp.Account.Pro.Admin.Application.Contracts",
+          "namespace": "Volo.Abp.Account",
+          "name": "AbpAccountAdminApplicationContractsModule"
+        },
+        {
+          "declaringAssemblyName": "Volo.Abp.SettingManagement.Web",
+          "namespace": "Volo.Abp.SettingManagement.Web",
+          "name": "AbpSettingManagementWebModule"
+        },
+        {
+          "declaringAssemblyName": "Volo.Abp.AspNetCore.Mvc.UI.Theme.Commercial",
+          "namespace": "Volo.Abp.AspNetCore.Mvc.UI.Theme.Commercial",
+          "name": "AbpAspNetCoreMvcUiThemeCommercialModule"
+        }
+      ],
+      "contentType": "abpModule",
+      "name": "AbpAccountAdminWebModule",
+      "summary": null
+    }
+  ]
+}

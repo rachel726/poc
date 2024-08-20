@@ -1,0 +1,33 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <Import Project="..\..\common.props" />
+
+  <PropertyGroup>
+    <TargetFramework>net7.0</TargetFramework>
+    <RootNamespace>poc</RootNamespace>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\poc.Domain.Shared\poc.Domain.Shared.csproj" />
+  <ProjectReference Include="..\..\modules\NewModule\src\NewModule.Domain\NewModule.Domain.csproj" /><ProjectReference Include="..\..\modules\moduleA\src\moduleA.Domain\moduleA.Domain.csproj" /><ProjectReference Include="..\..\modules\volo.account.pro\src\volo.account.pro.Domain\volo.account.pro.Domain.csproj" /></ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Volo.Abp.Emailing" Version="7.0.0" />
+    <PackageReference Include="Volo.Abp.Caching" Version="7.0.0" />
+    <PackageReference Include="Volo.Abp.PermissionManagement.Domain.Identity" Version="7.0.0" />
+    <PackageReference Include="Volo.Abp.OpenIddict.Domain" Version="7.0.0" />
+    <PackageReference Include="Volo.Abp.PermissionManagement.Domain.OpenIddict" Version="7.0.0" />
+    <PackageReference Include="Volo.Abp.BackgroundJobs.Domain" Version="7.0.0" />
+    <PackageReference Include="Volo.Abp.AuditLogging.Domain" Version="7.0.0" />
+    <PackageReference Include="Volo.Abp.FeatureManagement.Domain" Version="7.0.0" />
+    <PackageReference Include="Volo.Abp.SettingManagement.Domain" Version="7.0.0" />
+    <PackageReference Include="Volo.Abp.BlobStoring.Database.Domain" Version="7.0.0" />
+    <PackageReference Include="Volo.Abp.Identity.Pro.Domain" Version="7.0.0" />
+    <PackageReference Include="Volo.Abp.LanguageManagement.Domain" Version="7.0.0" />
+    <PackageReference Include="Volo.Saas.Domain" Version="7.0.0" />
+    <PackageReference Include="Volo.Abp.TextTemplateManagement.Domain" Version="7.0.0" />
+    <PackageReference Include="Volo.Abp.Commercial.SuiteTemplates" Version="7.0.0" />
+    <PackageReference Include="Volo.Abp.Gdpr.Domain" Version="7.0.0" />
+  </ItemGroup>
+
+</Project>

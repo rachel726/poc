@@ -1,0 +1,159 @@
+{
+  "name": "Volo.Abp.Account.Pro.Admin.Application",
+  "hash": "92f6d527c016dc36475330e1ee66036a",
+  "contents": [
+    {
+      "namespace": "Volo.Abp.Account",
+      "dependsOnModules": [
+        {
+          "declaringAssemblyName": "Volo.Abp.Account.Pro.Shared.Application",
+          "namespace": "Volo.Abp.Account",
+          "name": "AbpAccountSharedApplicationModule"
+        }
+      ],
+      "contentType": "abpModule",
+      "name": "AbpAccountAdminApplicationModule",
+      "summary": null
+    },
+    {
+      "namespace": "Volo.Abp.Account",
+      "baseClass": {
+        "name": "ApplicationService",
+        "namespace": "Volo.Abp.Application.Services",
+        "declaringAssemblyName": "Volo.Abp.Ddd.Application"
+      },
+      "implementingInterfaces": [
+        {
+          "name": "IApplicationService",
+          "namespace": "Volo.Abp.Application.Services",
+          "declaringAssemblyName": "Volo.Abp.Ddd.Application.Contracts"
+        },
+        {
+          "name": "IRemoteService",
+          "namespace": "Volo.Abp",
+          "declaringAssemblyName": "Volo.Abp.Core"
+        },
+        {
+          "name": "IAvoidDuplicateCrossCuttingConcerns",
+          "namespace": "Volo.Abp.Aspects",
+          "declaringAssemblyName": "Volo.Abp.Core"
+        },
+        {
+          "name": "IValidationEnabled",
+          "namespace": "Volo.Abp.Validation",
+          "declaringAssemblyName": "Volo.Abp.Validation"
+        },
+        {
+          "name": "IUnitOfWorkEnabled",
+          "namespace": "Volo.Abp.Uow",
+          "declaringAssemblyName": "Volo.Abp.Uow"
+        },
+        {
+          "name": "IAuditingEnabled",
+          "namespace": "Volo.Abp.Auditing",
+          "declaringAssemblyName": "Volo.Abp.Auditing.Contracts"
+        },
+        {
+          "name": "IGlobalFeatureCheckingEnabled",
+          "namespace": "Volo.Abp.GlobalFeatures",
+          "declaringAssemblyName": "Volo.Abp.GlobalFeatures"
+        },
+        {
+          "name": "ITransientDependency",
+          "namespace": "Volo.Abp.DependencyInjection",
+          "declaringAssemblyName": "Volo.Abp.Core"
+        },
+        {
+          "name": "IAccountSettingsAppService",
+          "namespace": "Volo.Abp.Account",
+          "declaringAssemblyName": "Volo.Abp.Account.Pro.Admin.Application.Contracts"
+        }
+      ],
+      "methods": [
+        {
+          "returnType": "AccountSettingsDto",
+          "isAsync": true,
+          "name": "GetAsync",
+          "summary": null,
+          "parameters": []
+        },
+        {
+          "returnType": "Void",
+          "isAsync": true,
+          "name": "UpdateAsync",
+          "summary": null,
+          "parameters": [
+            {
+              "type": "AccountSettingsDto",
+              "name": "input",
+              "isOptional": false
+            }
+          ]
+        },
+        {
+          "returnType": "AccountTwoFactorSettingsDto",
+          "isAsync": true,
+          "name": "GetTwoFactorAsync",
+          "summary": null,
+          "parameters": []
+        },
+        {
+          "returnType": "Void",
+          "isAsync": true,
+          "name": "UpdateTwoFactorAsync",
+          "summary": null,
+          "parameters": [
+            {
+              "type": "AccountTwoFactorSettingsDto",
+              "name": "input",
+              "isOptional": false
+            }
+          ]
+        },
+        {
+          "returnType": "AccountExternalProviderSettingsDto",
+          "isAsync": true,
+          "name": "GetExternalProviderAsync",
+          "summary": null,
+          "parameters": []
+        },
+        {
+          "returnType": "Void",
+          "isAsync": true,
+          "name": "UpdateExternalProviderAsync",
+          "summary": null,
+          "parameters": [
+            {
+              "type": "List<UpdateExternalProviderDto>",
+              "name": "input",
+              "isOptional": false
+            }
+          ]
+        },
+        {
+          "returnType": "AccountRecaptchaSettingsDto",
+          "isAsync": true,
+          "name": "GetRecaptchaAsync",
+          "summary": null,
+          "parameters": []
+        },
+        {
+          "returnType": "Void",
+          "isAsync": true,
+          "name": "UpdateRecaptchaAsync",
+          "summary": null,
+          "parameters": [
+            {
+              "type": "AccountRecaptchaSettingsDto",
+              "name": "input",
+              "isOptional": false
+            }
+          ]
+        }
+      ],
+      "contentType": "applicationService",
+      "name": "AccountSettingsAppService",
+      "summary": null
+    }
+  ]
+}

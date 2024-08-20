@@ -1,0 +1,26 @@
+{
+  "name": "Volo.Abp.Account.Pro.Admin.Application.Contracts",
+  "hash": "2912b6de4bbbba24420cfebf4a21a8e5",
+  "contents": [
+    {
+      "namespace": "Volo.Abp.Account",
+      "dependsOnModules": [
+        {
+          "declaringAssemblyName": "Volo.Abp.Account.Pro.Shared.Application.Contracts",
+          "namespace": "Volo.Abp.Account",
+          "name": "AbpAccountSharedApplicationContractsModule"
+        }
+      ],
+      "contentType": "abpModule",
+      "name": "AbpAccountAdminApplicationContractsModule",
+      "summary": null
+    },
+    {
+      "displayName": "Setting management",
+      "isEnabled": true,
+      "contentType": "permission",
+      "name": "AbpAccount.SettingManagement",
+      "summary": null
+    }
+  ]
+}
